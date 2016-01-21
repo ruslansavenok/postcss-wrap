@@ -1,6 +1,6 @@
 {
   "name": "postcss-wrap",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "PostCSS plugin to wrap css rules in a namespace e.g .my-selector {} to .wrap .my-selector {}",
   "keywords": [
     "postcss",
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "ava": "^0.9.1",
+    "colors": "^1.1.2",
     "eslint": "^1.10.3"
   },
   "scripts": {

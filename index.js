@@ -1,4 +1,5 @@
 var postcss = require('postcss')
+var colors  = require('colors')
 
 module.exports = postcss.plugin('postcss-wrap', function (opts) {
   opts = opts || {}
@@ -17,7 +18,7 @@ module.exports = postcss.plugin('postcss-wrap', function (opts) {
 
   return function (css, result) {
     if (!opts.selector) {
-      result.warn('opts.selector must be specified')
+      result.warn('opts.selector must be specified'.red)
       return
     }
 
