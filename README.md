@@ -1,6 +1,6 @@
-# postcss-wrap
+# postcss-wrap [![Build Status](https://travis-ci.org/ruslansavenok/postcss-wrap.svg?branch=master)](https://travis-ci.org/ruslansavenok/postcss-wrap)
 
-> Wrap CSS rules in a namespace
+> Wrap CSS rules in a namespace e.g. `.selector{}` into `.namespace .selector {}`
 
 ## Install
 
