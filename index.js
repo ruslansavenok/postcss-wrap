@@ -1,13 +1,34 @@
-var postcss = require('postcss');
+var postcss = require('postcss')
 
-module.exports = postcss.plugin('PLUGIN_NAME', function (opts) {
-    opts = opts || {};
+module.exports = postcss.plugin('postcss-wrap', function (opts) {
+    opts = opts || {}
 
-    // Work with options here
+    if (!opts.selector) {
+      result.warn('opts.selector must be specified')
+    }
+
+    var selectorsBlackList = [
+      /^from/,
+      /^to/,
+      /\%$/
+    ]
+
+    if (opts.skip instanceof Array) {
+      selectroBlackList = selectroBlackList.concat(opts.skip);
+    } else if (opts.skip instanceof RegExp) {
+      selectroBlackList.push(opts.skip)
+    }
 
     return function (css, result) {
-
-        // Transform CSS AST here
-
-    };
-});
+      css.walkRules(function (rule) {
+        rule.selectors = rule.selectors.map(function (selector) {
+          for (var i = 0; i < selectroBlackList.length; i++) {
+            if (selector.match(selectroBlackList[i])) {
+              return selector
+            }
+          }
+          return opts.selector + ' ' + selector
+        })
+      })
+    }
+})

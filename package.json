@@ -1,19 +1,21 @@
 {
   "name": "PLUGIN_NAME",
   "version": "0.0.0",
-  "description": "PostCSS plugin PLUGIN_DESC",
+  "description": "PostCSS plugin to wrap all css selectors e.g transform .my-selector {} into .component .my-selector {}",
   "keywords": [
     "postcss",
     "css",
-    "postcss-plugin"KEYWORDS
+    "postcss-plugin",
+    "wrap",
+    "selector"
   ],
-  "author": "AUTHOR_NAME <AUTHOR_EMAIL>",
+  "author": "Ruslan Savenok <ruslan.savenok@gmail.com>",
   "license": "MIT",
-  "repository": "GITHUB_NAME/PLUGIN_NAME",
+  "repository": "ruslansavenok/postcss-wrap",
   "bugs": {
-    "url": "https://github.com/GITHUB_NAME/PLUGIN_NAME/issues"
+    "url": "https://github.com/ruslansavenok/postcss-wrap/issues"
   },
-  "homepage": "https://github.com/GITHUB_NAME/PLUGIN_NAME",
+  "homepage": "https://github.com/ruslansavenok/postcss-wrap",
   "dependencies": {
     "postcss": "^5.0.13"
   },
