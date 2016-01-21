@@ -14,7 +14,7 @@
     "no-this-before-super":        [2],
     "no-use-before-define":        [2],
     "no-array-constructor":        [2],
-    "object-curly-spacing":        [2, "always"],
+    "object-curly-spacing":        [2, "never"],
     "no-floating-decimal":         [2],
     "no-warning-comments":         [2],
     "handle-callback-err":         [2],
@@ -90,7 +90,7 @@
     "quote-props":                 [2, "consistent-as-needed"],
     "no-iterator":                 [2],
     "no-new-func":                 [2],
-    "key-spacing":                 [2, { "align": "value" }],
+    "key-spacing":                 [0, { "align": "value" }], // cause it doesnt work with regex
     "complexity":                  [2],
     "new-parens":                  [2],
     "no-eq-null":                  [2],
@@ -115,8 +115,8 @@
     "eqeqeq":                      [2],
     "no-new":                      [2],
     "quotes":                      [2, "single"],
-    "indent":                      [2, 4],
-    "semi":                        [2, "always"],
+    "indent":                      [2, 2],
+    "semi":                        [2, "never"],
     "yoda":                        [2, "never"]
   },
   "ecmaFeatures": {

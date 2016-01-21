@@ -1,7 +1,7 @@
 {
   "name": "PLUGIN_NAME",
   "version": "0.0.0",
-  "description": "PostCSS plugin to wrap all css selectors e.g transform .my-selector {} into .component .my-selector {}",
+  "description": "PostCSS plugin to wrap css rules in a namespace e.g .my-selector {} -> .wrap .my-selector {}",
   "keywords": [
     "postcss",
     "css",

@@ -1,42 +1,26 @@
-# PostCSS Plugin Boilerplate
+# postcss-wrap
 
-<img align="right" width="135" height="95"
-     title="Philosopher’s stone, logo of PostCSS"
-     src="http://postcss.github.io/postcss/logo-leftp.svg">
+> Wrap CSS rules in a namespace
 
-Сreate new PostCSS plugins in a few steps:
+## Install
 
-1. Clone this repository:
+```shell
+npm install postcss-wrap --save-dev
+```
 
-   ```sh
-  git clone https://github.com/postcss/postcss-plugin-boilerplate.git
-   ```
+## Usage
 
-2. Execute the wizard script. It will ask you a few questions
-   and fill all files with your data.
+`postcsswrap({selector: '.wrap', skip: '.wrap'})`
 
-    ```sh
-   node ./postcss-plugin-boilerplate/start
-    ```
 
-3. Your plugin repository will now have a clean Git history.
-   [Create the GitHub repository](https://github.com/new)
-   and push your project there.
+## Options
 
-4. Add your project to [Travis CI](https://travis-ci.org).
+#### options.selector
+Type: `String`
 
-5. Write some code to `index.js` and tests to `test.js`.
+Provide a namespace selector in which to wrap CSS.
 
-6. Execute `npm test` command
+#### options.skip
+Type: `Regular Expression` or `Array of Regular Expressions`
 
-7. Add input and output CSS examples to `README.md`.
-
-8. Add options descriptions if your plugin has them.
-
-9. Fill `CHANGELOG.md` with initial version and release it to npm.
-
-10. Fork [PostCSS](https://github.com/postcss/postcss), add your plugin to
-    [Plugins section](https://github.com/postcss/postcss/blob/master/docs/plugins.md)
-    in `README.md`, and send a pull request.
-
-11. Follow [@PostCSS](https://twitter.com/postcss) to get the latest updates.
+Skip selectors from being wrapped. Even if you will not set this option, it will still skip css animation selectors `from`, `to` and `endingWithPercentSymbol%`
