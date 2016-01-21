@@ -1,5 +1,5 @@
 {
-  "name": "PLUGIN_NAME",
+  "name": "postcss-wrap",
   "version": "0.0.0",
   "description": "PostCSS plugin to wrap css rules in a namespace e.g .my-selector {} -> .wrap .my-selector {}",
   "keywords": [
