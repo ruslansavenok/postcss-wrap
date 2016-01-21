@@ -1,5 +1,5 @@
 var postcss = require('postcss')
-var colors  = require('colors')
+require('colors')
 
 module.exports = postcss.plugin('postcss-wrap', function (opts) {
   opts = opts || {}
