@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/ruslansavenok/postcss-wrap",
   "dependencies": {
+    "colors": "^1.1.2",
     "postcss": "^5.0.13"
   },
   "devDependencies": {
     "ava": "^0.9.1",
-    "colors": "^1.1.2",
     "eslint": "^1.10.3"
   },
   "scripts": {
